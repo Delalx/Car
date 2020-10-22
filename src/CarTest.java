@@ -65,11 +65,11 @@ public class CarTest {
         //Check håndbremsen
         DelalCar.Handbrake(true); //Hvis false, så vil den stoppe her.
 
-        DelalCar.changeToGear(0); //Sæt bilen i frigear
+        DelalCar.changeToGear(Car.Gear.NEUTRAL); //Sæt bilen i frigear
 
         DelalCar.Clutch(1); //Hvis den er i frigear, så tryk koblingen ned
 
-        DelalCar.changeToGear(1); //Skift gear til 1
+        DelalCar.changeToGear(Car.Gear.FIRST); //Skift gear til 1
 
         DelalCar.Clutch(0); //Slip koblingen
 

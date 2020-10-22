@@ -29,6 +29,7 @@ public class Car {
         }
     }
 
+    /* Her er den originale:
     public void changeToGear(int gear) {
         if (gear == 1) {
             System.out.println("The car is in 1. gear");
@@ -50,6 +51,26 @@ public class Car {
         }
         else if (gear == 0) {
             System.out.println("The car is in neutral");
+        }
+    }*/
+    enum Gear {
+        REVERSE,
+        NEUTRAL,
+        FIRST,
+        SECOND,
+        THIRD,
+        FORTH,
+        FIFTH;
+    }
+    public void changeToGear(Gear gear) {
+        switch (gear) {
+            case FIRST -> System.out.println("The car is in 1. gear");
+            case SECOND -> System.out.println("The car is in 2. gear");
+            case THIRD -> System.out.println("The car is in 3. gear");
+            case FORTH -> System.out.println("The car is in 4. gear");
+            case FIFTH -> System.out.println("The car is in 5. gear");
+            case REVERSE -> System.out.println("The car is in reverse");
+            case NEUTRAL -> System.out.println("The car is in neutral");
         }
     }
 
